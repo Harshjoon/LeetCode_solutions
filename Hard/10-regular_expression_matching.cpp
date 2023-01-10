@@ -1,3 +1,5 @@
+#include <string>
+
 class Solution {
 public:
     bool Match(string &s, string &p, int i, int j){

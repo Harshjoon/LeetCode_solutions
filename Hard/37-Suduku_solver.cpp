@@ -1,3 +1,7 @@
+#include <vector>
+#include <iostream>
+using namespace std;
+
 class Solution {
 public:
     void solveSudoku(vector<vector<char>>& board) {
@@ -59,14 +63,5 @@ public:
             && !inCol(board, col, num)
             && !inRow(board, row, num)
             && !inBox(board, row - row%3, col - col%3, num);
-    }
-
-    void print(vector<vector<char>>& board){
-        for(int row=0; row<9; row++){
-            for(int col=0;col<9; col++){
-                cout << board[row][col] << '.';
-            }
-            cout << endl;
-        }
     }
 };
